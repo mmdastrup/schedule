@@ -1,0 +1,18 @@
+.library-course {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background: cornflowerblue;
+
+    &__title {
+        grid-row: 1/2;
+        display: flex;
+    }
+    
+    &__arrow {
+        grid-row: 1/2;
+    }
+    &__descrption{
+        grid-row: 2/3;
+    }
+}
