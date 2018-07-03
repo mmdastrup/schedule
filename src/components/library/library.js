@@ -10,6 +10,14 @@ class Library extends Component {
     comonentWillMount() {
         this.props.fetchCourses()
     }
+
+    renderCourses() {
+        const data = this.props.courses
+        
+        return data.map((course, index) => {
+            return <LibraryCourse course={...course} key={index}/>
+        })
+    }
     render() {
         console.log(this.props.courses);
         return (
