@@ -12,7 +12,7 @@ class Schedule extends Component {
         
         return data.map((course, index) => {
             if(course.enrolled) {
-            return <ScheduleCourse course={...course} key={index}/>
+            return <ScheduleCourse {...course} key={index}/>
             }
         })
     }
