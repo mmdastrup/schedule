@@ -9,7 +9,6 @@ class Schedule extends Component {
 
     renderCourses() {
         const data = this.props.courses
-        
         return data.map((course, index) => {
             if(course.enrolled) {
             return <ScheduleCourse {...course} key={index}/>
