@@ -1,10 +1,31 @@
 import React, { Component } from "react";
 
 class Arrow extends Component {
-  render() {
-    return <div className={`${this.props.className} arrow`}>
 
-    </div>
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      status: false
+    }
+  }
+
+  toggleArrow = function() {
+    if(this.state.status) {
+      //close it
+      document.getElementById('arrow').classList.remove('arrow-closed')
+    } else {
+      //open it
+      document.getElementById('arrow').classList.add('arrow-closed')
+    }
+
+    this.setState({ status: !this.state.status })
+  }.bind(this)
+
+  render() {
+    return (
+      <a id="arrow" onCLick={() => this.toggleArrow()}className={`${this.props.className} arrow`}></a>
+    )
   }
 }
 
