@@ -8,7 +8,7 @@ class ScheduleCourse extends Component {
   render() {
     return (
       <div className="schedule-course">
-       <label className="schedule-course__label">{this.props.title}</label>
+       <div className="schedule-course__title">{this.props.title}</div>
        <Action onClick={() => this.props.toggleEnrolled(this.props.id)} className="schedule-course__action"/>
       </div>
     );
