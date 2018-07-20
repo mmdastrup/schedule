@@ -18,7 +18,7 @@ export function fetchCourses() {
             {
                 id: 0,
                 title: "Up and Running with Redis",
-                description: "In this course you'll learn how to work with the efficient Redis database to manage key / value relationships.",
+                description: "  In this course you'll learn how to work with the efficient Redis database to manage key / value relationships.",
                 enrolled: false
             },
             {
