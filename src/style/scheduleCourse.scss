@@ -1,7 +1,7 @@
 .schedule-course{
    
     display: grid;
-    grid-template-columns: [title-s] 1fr [action-s] 50px [action-e space-s] 12px [space-e title-e];
+    grid-template-columns:[title-s] 1fr [action-s] 32px [action-e space-s] 12px [space-e title-e];
     grid-template-rows: 1fr;
 
     justify-items: center;
@@ -24,7 +24,6 @@
     width: 280px;
     background: white;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2);
-
     color: $color-subtle-black;
     font-family: $font-lato;
     font-size: 16px;
